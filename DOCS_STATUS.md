@@ -5,9 +5,10 @@ Tài liệu nào nên đọc trước, tài liệu nào là historical/reference
 ## Active / ưu tiên đọc trước
 1. `README.md` — entry ngắn cho repo dev sạch
 2. `RUNBOOK.md` — chạy/dừng/xem log lane farmbot runtime
-3. `README-HEADLESS-UBUNTU-SERVER.md` — bring-up headless trên Ubuntu server
-4. `CONFIG_REFERENCE.md` — cấu hình `.env`
-5. `ARCHITECTURE.md` — cấu trúc module/source
+3. `REPLACEMENT_CHECKLIST.md` — tiêu chuẩn để repo dev thay runtime copy trên farmbot
+4. `README-HEADLESS-UBUNTU-SERVER.md` — bring-up headless trên Ubuntu server
+5. `CONFIG_REFERENCE.md` — cấu hình `.env`
+6. `ARCHITECTURE.md` — cấu trúc module/source
 
 ## Reference / đọc khi cần
 - `TECHNIQUES.md` — giải thích kỹ thuật chi tiết hơn
