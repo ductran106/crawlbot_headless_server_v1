@@ -1,0 +1,34 @@
+cd /home/farm4bot/work/crawlbot_portable_scheduler_headless_server_v1
+cp -n .env.headless.example .env
+nano .env
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+./run-headless-server.sh
+# chạy nền: 
+
+cd /home/farm4bot/work/crawlbot_portable_scheduler_headless_server_v1 && nohup ./run-headless-server.sh > /tmp/crawlbot-headless.out 2>&1 & echo $!
+
+
+# xem log realtime: 
+tail -f /tmp/crawlbot-headless.out
+tail -f logs/headless-run.log
+# dừng an toàn: pkill -TERM -f 'python main.py'
+##################### 
+Đây anh, **lệnh “stop chuẩn”** cho lane này:
+
+```bash
+pkill -f 'python.*zalo|python.*crawler|chromedriver|chrome.*chrome_user_data'
+```
+
+Nếu muốn kiểm tra trước/sau khi stop:
+
+```bash
+pgrep -af 'python.*zalo|python.*crawler|chromedriver|chrome.*chrome_user_data'
+```
+
+Nếu có tiến trình lì không chịu chết thì mới dùng bản mạnh tay:
+
+```bash
+pkill -9 -f 'python.*zalo|python.*crawler|chromedriver|chrome.*chrome_user_data'
+``` 🦋

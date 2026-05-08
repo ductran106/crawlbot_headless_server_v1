@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+.venv.broken.*/
+venv/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+!.env.headless.example
+!.env.scheduler-tuning.example
+!.env.2room.recommended
+!.env.3room.recommended
+!.env.old.example
+
+# Runtime state
+logs/
+dev-logs/
+*.log
+
+# Browser profile / session
+chrome_user_data/
+chrome_user_data.tar.gz
+dev-chrome-profile/
+
+# Crawl output / local artifacts
+data/
+dev-data/
+*.docx
+*.db
+*.sqlite
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
