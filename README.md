@@ -22,7 +22,9 @@ Repo này là bản **dev sạch** của lane `crawlbot_portable_scheduler_headl
 - `src/` — source chính
 - `run-headless-server.sh` — launcher headless chuẩn
 - `run-crawlbot-with-heartbeat.sh` — launcher có heartbeat file
+- `RUNBOOK.md` — quick runbook cho lane farmbot runtime
 - `README-HEADLESS-UBUNTU-SERVER.md` — hướng dẫn bring-up Ubuntu server
+- `DOCS_STATUS.md` — chỉ rõ tài liệu nào active, tài liệu nào historical
 - `ARCHITECTURE.md` / `TECHNIQUES.md` / `CONFIG_REFERENCE.md` — tài liệu kỹ thuật và config
 
 ## Cài đặt nhanh
@@ -71,4 +73,6 @@ tail -f logs/headless-run.log
 ## Ghi chú repo
 - Repo này được làm sạch từ một runtime handoff copy đã chạy thật.
 - Không đưa secrets, session đăng nhập, DB, logs, hay crawl outputs lên git.
+- Nếu muốn đọc đúng thứ tự, xem `DOCS_STATUS.md`.
+- Muốn thao tác nhanh trên farmbot runtime, đọc `RUNBOOK.md`.
 - Muốn xem hướng dẫn bring-up chi tiết, đọc `README-HEADLESS-UBUNTU-SERVER.md`.
