@@ -1,15 +1,15 @@
 # RUNBOOK.md — Farmbot runtime quick runbook
 
-Mục tiêu: đủ ngắn để mở ra là chạy, xem log, dừng, và kiểm tra trạng thái lane headless trên farmbot.
+Mục tiêu: đủ ngắn để mở ra là chạy, xem log, dừng, và kiểm tra trạng thái lane headless trên farmbot.\n\nNếu lane đang vận hành bằng systemd, ưu tiên đọc `SYSTEMD-RUNBOOK.md` trước. File này giữ các lệnh service chuẩn hiện tại.
 
 ## Runtime path đang dùng trên farmbot
 ```bash
-/home/farm4bot/work/crawlbot_portable_scheduler_headless_server_v1
+/home/farm4bot/work/crawlbot_headless_server_v1_dev
 ```
 
 ## 1) Vào đúng thư mục
 ```bash
-cd /home/farm4bot/work/crawlbot_portable_scheduler_headless_server_v1
+cd /home/farm4bot/work/crawlbot_headless_server_v1_dev
 ```
 
 ## 2) Chạy bot

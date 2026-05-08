@@ -76,5 +76,6 @@ tail -f logs/headless-run.log
 - Không đưa secrets, session đăng nhập, DB, logs, hay crawl outputs lên git.
 - Nếu muốn đọc đúng thứ tự, xem `DOCS_STATUS.md`.
 - Muốn thao tác nhanh trên farmbot runtime, đọc `RUNBOOK.md`.
+- Muốn vận hành bằng systemd (service đang chạy thật hiện tại), đọc `SYSTEMD-RUNBOOK.md`.
 - Muốn biết khi nào repo dev đủ điều kiện thay runtime copy, đọc `REPLACEMENT_CHECKLIST.md`.
 - Muốn xem hướng dẫn bring-up chi tiết, đọc `README-HEADLESS-UBUNTU-SERVER.md`.
