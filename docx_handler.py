@@ -105,8 +105,6 @@ class DocxHandler:
             all_text = all_text.replace('*[', '\n*[')
             while '  ' in all_text:
                 all_text = all_text.replace('  ', ' ')
-            all_text = all_text.replace('-', '_')
-            all_text = all_text.replace('+', '_')
             all_text = all_text.replace('Huỷ', 'Hủy')
             while '\n\n' in all_text:
                 all_text = all_text.replace('\n\n', '\n')
