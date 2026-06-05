@@ -1,0 +1,9 @@
+[Unit]
+Description=Crawler fail-artifacts cleanup
+
+[Service]
+Type=oneshot
+User=duc
+Group=duc
+WorkingDirectory=/home/duc/crawlbot_headless_server_v1/crawlbot_portable_scheduler_headless_server_v1
+ExecStart=/home/duc/crawlbot_headless_server_v1/crawlbot_portable_scheduler_headless_server_v1/scripts/cleanup_fail_artifacts.sh

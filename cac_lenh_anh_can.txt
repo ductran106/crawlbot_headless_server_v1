@@ -1,0 +1,30 @@
+Các lệnh anh sẽ cần
+Xem trạng thái
+Copy
+sudo systemctl status crawlbot-headless-hanauda.service
+Xem log live của service
+Copy
+sudo journalctl -u crawlbot-headless-hanauda.service -f
+Restart service
+Copy
+sudo systemctl restart crawlbot-headless-hanauda.service
+Stop service
+Copy
+sudo systemctl stop crawlbot-headless-hanauda.service
+Start lại service
+Copy
+sudo systemctl start crawlbot-headless-hanauda.service
+Bật auto-start
+Copy
+sudo systemctl enable crawlbot-headless-hanauda.service
+Tắt auto-start
+Copy
+sudo systemctl disable crawlbot-headless-hanauda.service
+File service nằm ở đâu
+Copy
+/etc/systemd/system/crawlbot-headless-hanauda.service
+Nội dung service em đã dựng
+Restart=always
+RestartSec=10
+WantedBy=multi-user.target
+Nghĩa là nếu bot tự chết thì systemd cũng sẽ thử kéo nó lên lại.
