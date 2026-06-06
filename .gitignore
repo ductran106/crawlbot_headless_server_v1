@@ -34,3 +34,12 @@ dev-data/
 .DS_Store
 .vscode/
 .idea/
+
+# Production/runtime artifacts
+*.sqlite3
+log/
+.archive/
+.backup/
+.backups/
+fail_artifacts/
+screenshots/
